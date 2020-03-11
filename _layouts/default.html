@@ -1,0 +1,30 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html data-current="{{ page.section }}" lang="en" dir="ltr" class="no-js">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <main role="main" class="cd-container">
+      <a id="main-content" tabindex="-1"></a>
+      <div class="cd-layout-content">
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+    {% include cd-icons-sprite.html %}
+
+    <script src="{{ base.url | prepend: site.url }}/assets/js/cd-dropdown.js"></script>
+    <script src="{{ base.url | prepend: site.url }}/assets/js/cd-menu.js"></script>
+
+  </body>
+
+</html>
